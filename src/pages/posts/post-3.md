@@ -6,6 +6,7 @@ image:
   url: "https://docs.astro.build/assets/rays.webp"
   alt: "The Astro logo on a dark background with rainbow rays."
 pubDate: 2022-07-15
+layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
 
