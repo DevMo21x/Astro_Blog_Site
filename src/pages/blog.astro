@@ -23,15 +23,27 @@ const { pageTitle = "Blog" } = Astro.props;
     This site will update as I complete more of the tutorial, so keep checking
     back and see how my journey is going!
   </p>
-  <ul>
-    <li>
-      <a href="/posts/post-1">Post 1</a>
-    </li>
-    <li>
-      <a href="/posts/post-2">Post 2</a>
-    </li>
-    <li>
-      <a href="/posts/post-3">Post 3</a>
-    </li>
-  </ul>
+  <div class="container">
+    <div class="items">
+      <div class="items-head">
+        <p>Posts</p>
+        <hr />
+      </div>
+
+      <div class="items-body">
+        <div class="items-body-content">
+          <a href="pages/posts/post-1.md">Post 1</a>
+          <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="items-body-content">
+          <a href="post-2.md">Post 2</a>
+          <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="items-body-content">
+          <a href="post-3.md">Post 3</a>
+          <i class="fa fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

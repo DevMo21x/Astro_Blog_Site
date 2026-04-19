@@ -1,13 +1,19 @@
 ---
 const { frontmatter } = Astro.props;
+import BaseLayout from "./BaseLayout.astro";
 import "../styles/global.css";
 ---
 
-<meta charset="utf-8" />
-<h1>{frontmatter.title}</h1>
-<p>Written by {frontmatter.author}</p>
-<slot />
+<BaseLayout>
+  <meta charset="utf-8" />
+  <h1>{frontmatter.title}</h1>
+  <p>Written by {frontmatter.author}</p>
+  <slot />
 
-<button class="cssbuttons-io">
-  <span><a href="/blog">Back</a></span>
-</button>
+  <button>
+    <a href="/blog">
+      <span>Back</span>
+      <a></a>
+    </a>
+  </button>
+</BaseLayout>
